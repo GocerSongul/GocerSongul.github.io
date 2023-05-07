@@ -26,8 +26,45 @@
                                     <li class=""><a href="#projects">Projects</a></li>
                                     <li class=""><a href="#contact">Contact</a></li>
                                     </ul>
+                                    
+                                    <div id="container">
+                                          <button type="button">Color Button</button> 
+                                    </div>
+                                    <script>
+                                    function randomNumber(min, max) {
+                                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                                      }
+                                      
+                                      const colors = [
+                                        "Red",
+                                        "BlueViolet",
+                                        "DarkMagenta",
+                                        "DarkOrchid",
+                                        "DarkViolet",
+                                        "Fuchsia",
+                                        "Indigo",
+                                        "Lavender",
+                                        "LavenderBlush",
+                                        "MediumOrchid",
+                                        "MediumPurple",
+                                        "Purple",
+                                        "RebeccaPurple",
+                                        "Violet",
+                                        "Thistle"
+                                      ];
+                                      
+                                      const button = document.querySelector("button");
+                                      button.addEventListener("click", () => {
+                                        let colorSelection = randomNumber(0, 4);
+                                        document.body.style.background = colors[colorSelection];
+                                      });
+                                    </script>
+                                      
                             </div>
+                           
+                            
                         </div>
+                        
                         <div class="header-text">
                             <h1><span class="first-letter">H</span>ello</h1>
                             <h3>I'm Songül Göçer</h3>

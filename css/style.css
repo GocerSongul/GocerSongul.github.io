@@ -78,6 +78,17 @@ a{
   font-weight: bold;
   font-size:15px ;
 }
+body,
+html {
+  height: 100%;
+  display: grid;
+}
+
+#container {
+  margin: auto;
+}
+
+
 .header-text{
   position: absolute;  /*top left için absolute*/
   top: 45%;
@@ -117,6 +128,7 @@ h3{
   /*border-top-right-radius: 35px;*/
   border-top-left-radius: 35px;
   /*border-radius: 35px;*/
+  cursor: pointer;
   border-bottom-right-radius: 35px;
   position: relative; /*aşağıdakine absolute verdiğimiz için bunu relative yaptık*/
   overflow: hidden; /*taşma engellendi*/
